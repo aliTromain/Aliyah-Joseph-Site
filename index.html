@@ -2,112 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Judd Villar | Social Media Strategist</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-      color: white;
-    }
-    header {
-      background-color: #5910E5;
-      padding: 2rem;
-      text-align: center;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-top: 1rem;
-    }
-    nav a {
-      color: #C3FF83;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem;
-    }
-    .service {
-      border: 1px solid #C3FF83;
-      margin-bottom: 1.5rem;
-      padding: 1rem;
-      border-radius: 8px;
-    }
-    .service h3 {
-      color: #C3FF83;
-    }
-    form {
-      background-color: #111;
-      padding: 1.5rem;
-      border-radius: 8px;
-    }
-    input, select, textarea {
-      width: 100%;
-      padding: 0.75rem;
-      margin: 0.5rem 0;
-      border: none;
-      border-radius: 4px;
-    }
-    button {
-      background-color: #C3FF83;
-      color: #000;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 4px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aliyah Fruit Shop</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Judd Villar</h1>
-    <p>Helping creative brands create content that drives community and culture.</p>
-    <nav>
-      <a href="https://instagram.com" target="_blank">Instagram</a>
-      <a href="https://tiktok.com" target="_blank">TikTok</a>
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-    </nav>
-  </header>
 
-  <section>
-    <h2>Our Services</h2>
+<nav>
+  <div class="logo">Aliyah Fruit Shop</div>
+  <div class="social-links">
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+    <a href="https://tiktok.com" target="_blank">TikTok</a>
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+  </div>
+</nav>
 
-    <div class="service">
-      <h3>The Social Spark (2-Hour Consultation)</h3>
-      <p>A power session to audit your social media, refine your content, or brainstorm fresh ideas. 💰 $250 per session</p>
-    </div>
+<header>
+  <h1>Helping creative brands create content that drives community and culture.</h1>
+</header>
 
-    <div class="service">
-      <h3>Campaign in a Box (One-Time Social Fix)</h3>
-      <p>A targeted strategy to launch your next big social campaign. 💰 Starting at $1,500 per campaign</p>
-    </div>
+<section>
+  <h2>Our Services</h2>
+  <div class="service">
+    <h3>The Social Spark (2-Hour Consultation)</h3>
+    <p>A power session to audit your social media, refine your content, or brainstorm fresh ideas. <br><strong>💰 $250 per session</strong></p>
+  </div>
+  <div class="service">
+    <h3>Campaign in a Box (One-Time Social Fix)</h3>
+    <p>A targeted strategy to launch your next big social campaign for up to 3 platforms. <br><strong>💰 Starting at $1,500 per campaign</strong></p>
+  </div>
+  <div class="service">
+    <h3>In-House, On-Demand (Long-Term Partnership)</h3>
+    <p>Full social media support as an extension of your team for up to 12 months. <br><strong>💰 Starting at $4,500/month</strong></p>
+  </div>
+</section>
 
-    <div class="service">
-      <h3>In-House, On-Demand (Long-Term Partnership)</h3>
-      <p>Ongoing, in-house social media support tailored to your brand. 💰 Starting at $4,500 per month</p>
-    </div>
-  </section>
+<section>
+  <h2>Contact Form</h2>
+  <p>Let’s get in touch. Tell me a little bit about your project below, or email me directly at <a href="mailto:judvillar112@gmail.com">judvillar112@gmail.com</a>.</p>
+  <form action="https://formsubmit.co/judvillar112@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://yourgithubusername.github.io/aliyah-fruit-shop/thank-you.html">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <select name="service" required>
+      <option disabled selected>Select Service</option>
+      <option>The Social Spark</option>
+      <option>Campaign in a Box</option>
+      <option>In-House, On-Demand</option>
+    </select>
+    <textarea name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
 
-  <section>
-    <h2>Contact Form</h2>
-    <p>Let’s get in touch. Tell me a little bit about your project below, or email me directly at <a href="mailto:judvillar112@gmail.com" style="color:#C3FF83">judvillar112@gmail.com</a>.</p>
-    
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="_replyto" placeholder="Your Email" required />
-      <select name="service">
-        <option value="">Select a Service</option>
-        <option value="The Social Spark">The Social Spark</option>
-        <option value="Campaign in a Box">Campaign in a Box</option>
-        <option value="In-House, On-Demand">In-House, On-Demand</option>
-      </select>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
 </body>
 </html>
